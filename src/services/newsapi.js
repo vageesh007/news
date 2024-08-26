@@ -1,7 +1,7 @@
 export const fetchArticles = async () => {
   try {
     const response = await fetch(
-      'https://newsapi.org/v2/everything?q=religion&apiKey=ca1eaae4afeb405daa2545c062679a2b'
+      'https://newsdata.io/api/1/latest?apikey=pub_50930b0959b7ba6b48c83de78e677aac54354&category=politics&country=bd'
     );
     if (!response.ok) {
       throw new Error('Network response was not ok');
